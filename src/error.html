@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error</title>
+</head>
+<body>
+<h1>Error</h1>
+
+<div th:if="${error}" class="alert alert-danger">
+    <p th:text="${error}">Error Message</p>
+</div>
+
+<a th:href="@{/}">Go back to Home</a>
+</body>
+</html>

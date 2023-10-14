@@ -1,0 +1,28 @@
+@import "normalize.scss"
+@import "reset.scss"
+
+$grey-color: #D9D9D9
+$green-color: #478252
+
+body 
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100vh
+.login-form
+    display: flex
+    flex-direction: column
+    padding: 20px
+    border: 1px solid $green-color
+    border-radius: 25px
+    background: $grey-color
+    &__input
+        margin-bottom: 10px
+        border-radius: 5px
+        border: 1px solid $green-color
+        &:last-child
+            margin-bottom: 0
+            &:hover
+                background: $green-color
+                border: 1px solid $grey-color
+                color: #fff
